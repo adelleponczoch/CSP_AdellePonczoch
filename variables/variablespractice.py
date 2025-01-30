@@ -1,14 +1,14 @@
 # Adelle Ponczoch, Variables Practice Python
 
-myname = "My name is Adelle."
+myname = "Adelle"
 
 print(myname)
 
-smallernumber = "A number between 1 and 10 is 9."
+smallernumber = "9"
 
 print(smallernumber)
 
-biggernumber = "A number between 1 and 100 is 47."
+biggernumber = "47"
 
 print(biggernumber)
 
