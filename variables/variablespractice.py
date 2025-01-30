@@ -18,12 +18,24 @@ print(breakfast)
 
 favcolor = "blue"
 
+print(favcolor)
+
 schoolname = "Ucas"
+
+print(schoolname)
 
 year = "2025"
 
+print(year)
+
 myeyecolor = "blue"
+
+print(myeyecolor)
 
 myage = "15"
 
+print(myage)
+
 favschoolsubject = "English"
+
+print(favschoolsubject)
