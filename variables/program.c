@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-char name[] = "Adelle";
-int num = 42;
-float pi = 3.14;
+char name[20];
 
 int main(void){
-    printf("Hello %s, my age is %d and my favorite number is %f\n", name, num, pi);
-    printf("%d\n", num);
-    printf("%f\n", pi);
+    printf("Please tell me your name: \n");
+    fgets(name, sizeof(name), stdin);
+
+    printf("Hello %s", name);
     return 0;
 }
