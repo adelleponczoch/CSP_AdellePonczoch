@@ -1,3 +1,4 @@
+//Adelle Ponczoch, first program for c
 #include <stdio.h>
 
 char name[20];
