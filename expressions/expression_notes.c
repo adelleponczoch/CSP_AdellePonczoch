@@ -12,7 +12,7 @@ int sub = 4-6;
 int mul = 4*6;
 float div = 6/4;
 int mod = 6%4;
-float ex = pow( 5, 2);
+int ex = (int) pow( 5, 2);
 
 int main(void){
     //printf("Type a number: \n");
@@ -27,7 +27,7 @@ int main(void){
     mul = 7*4; //this is for reassigning the variable, which has to be in the main
     printf("%.2f\n", div); //the .2 after the % shows the computer how many decimal points I want
     printf("%d\n", mod);
-    printf("%f\n", ex);
+    printf("%d\n", ex);
     printf("%d\n", mul);
 
     return 0;
