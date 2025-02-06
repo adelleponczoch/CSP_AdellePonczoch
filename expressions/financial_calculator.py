@@ -13,7 +13,7 @@ groceries = float (input("What is your monthly grocery cost?\n"))
 # Ask for transportation expenses (user input)
 transportation = float (input("What is your monthly transportation cost?\n"))
 # Calculate savings as 10% of income (variable)
-savings = float (input("What is your monthly savings?\n"))
+
 # Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
 
 # Calculate percent of rent (rent/ income) (variable)
