@@ -1,3 +1,4 @@
+//practice in C
 #include <stdio.h>
 
 char name[] = "Adelle";
