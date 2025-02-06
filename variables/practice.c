@@ -1,4 +1,4 @@
-//practice in C
+// Adelle Ponczoch, Practice in C
 #include <stdio.h>
 
 char name[] = "Adelle";
