@@ -2,32 +2,27 @@
 #include <stdio.h>
 
 // Ask for monthly income (user input)
-float income = [10];
+float income;
 // Ask for rent amount (user input)
-float rent = [10];
+float rent;
 // Ask for utilities expenses (user input)
-float utilities = [10];
+float utilities;
 // Ask for groceries expenses (user input)
-float groceries = (input("What is your monthly grocery cost?\n"));
+float groceries;
 // Ask for transportation expenses (user input)
-float transportation = (input("What is your monthly transportation cost?\n"));
-// Calculate savings as 10% of income (variable)
-float savings = income* 0.1;
-// Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
-float spending = income-(rent+ utilities+ groceries+ transportation+ savings);
-// Calculate percent of rent (rent/ income) (variable)
-float percent_rent = (rent/ income) *100;
-// Calculate percent of utilities (utilities/ income) (variable)
-float percent_utilities = (utilities/ income) *100;
-// Calculate percent of groceries (groceries/ income) (variable)
-float percent_groceries = (groceries/ income) *100;
-// Calculate percent of transportation (transportation/ income) (variable)
-float percent_transportation = (transportation/ income) *100;
-// Calculate percent of spending (spending/income) (variable)
-float percent_spending = (spending/income) *100;
+float transportation;
 
 int main(void){
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
-
+    printf("%s\n", "What is your monthly income: \n");
+    scanf("%s\n", income);
+    printf("%s\n", "What is your monthly rent: \n");
+    scanf("%s\n", rent);
+    printf("%s\n", "What is your monthly utilities cost: \n");
+    scanf("%s\n", utilities);
+    printf("%s\n", "What is your monthly groceries cost: \n");
+    scanf("%s\n", groceries);
+    printf("%s\n", "What is your monthly transportation cost: \n");
+    scanf("%s\n", transportation);
     return 0;
 }
