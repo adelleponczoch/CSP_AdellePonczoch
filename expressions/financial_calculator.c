@@ -40,16 +40,16 @@ int main(void){
     printf("%f\n", "What is your monthly transportation cost: \n");
     scanf("%f\n", &transportation);
     // tell user category spending amount AND percent for rent("You spend $XX.XX on rent and that is XX% of your income.") (print)
-    printf("Each month you spend ${rent%.2f} on rent, which is {percent_rent%.2f}% of your monthly income.");
+    printf("Each month you spend $%.2f on rent, which is %.2f% of your monthly income.\n", rent, percent_rent);
     // tell user category spending amount AND percent for utilities ("You spend $XX.XX on utilities and that is XX% of your income.") (print)
-    printf("Each month you spend ${utilities%.2f} on utilities, which is {percent_utilities%.2f}% of your monthly income.");
+    printf("Each month you spend $%.2f on utilities, which is %.2f% of your monthly income.\n", utilities, percent_utilities);
     // tell user category spending amount AND percent for groceries ("You spend $XX.XX on groceries and that is XX% of your income.") (print)
-    printf("Each month you spend ${groceries%.2f} on groceries, which is {percent_groceries%.2f}% of your monthly income.");
+    printf("Each month you spend $%.2f on groceries, which is %.2f% of your monthly income.\n", groceries, percent_groceries);
     // tell user category spending amount AND percent for transportation ("You spend $XX.XX on transportation and that is XX% of your income.") (print)
-    printf("Each month you spend ${transportation%.2f} on transportation, which is {percent_transportation%.2f}% of your monthly income.");
+    printf("Each month you spend $%.2f on transportation, which is %.2f% of your monthly income.\n", transportation, percent_transportation);
     // tell user category spending amount AND percent for spending ("You spend $XX.XX on spending and that is XX% of your income.") (print)
-    printf("Each month you spend ${spending%.2f} on spending, which is {percent_spending%.2f}% of your monthly income.");
+    printf("Each month you spend $%.2f on spending, which is %.2f% of your monthly income.\n", spending, percent_spending);
     // tell user category spending amount AND percent for savings ("You spend $XX.XX on savings and that is 10% of your income.") (print)
-    printf("Each month you spend ${savings%.2f} on savings, which is 10% of your monthly income.");
+    printf("Each month you spend $%.2f on savings, which is 10% of your monthly income.\n", savings);
     return 0;
 }
