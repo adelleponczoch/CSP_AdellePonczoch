@@ -3,15 +3,15 @@
 #include <math.h>
 
 // Ask for monthly income (user input)
-float income;
+float income[10];
 // Ask for rent amount (user input)
-float rent;
+float rent[10];
 // Ask for utilities expenses (user input)
-float utilities;
+float utilities[10];
 // Ask for groceries expenses (user input)
-float groceries;
+float groceries[10];
 // Ask for transportation expenses (user input)
-float transportation;
+float transportation[10];
 // Calculate savings as 10% of income (variable)
 float savings = income* 0.1;
 // Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
