@@ -12,20 +12,6 @@ float utilities[10];
 float groceries[10];
 // Ask for transportation expenses (user input)
 float transportation[10];
-// Calculate savings as 10% of income (variable)
-float savings = income* 0.1;
-// Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
-float spending = income-(rent+ utilities+ groceries+ transportation+ savings);
-// Calculate percent of rent (rent/ income) (variable)
-float percent_rent = (rent/ income) *100;
-// Calculate percent of utilities (utilities/ income) (variable)
-float percent_utilities = (utilities/ income) *100;
-// Calculate percent of groceries (groceries/ income) (variable)
-float percent_groceries = (groceries/ income) *100;
-// Calculate percent of transportation (transportation/ income) (variable)
-float percent_transportation = (transportation/ income) *100;
-// Calculate percent of spending (spending/income) (variable)
-float percent_spending = (spending/income) *100;
 
 int main(void){
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
@@ -39,6 +25,20 @@ int main(void){
     scanf("%f\n", &groceries);
     printf("%f\n", "What is your monthly transportation cost: \n");
     scanf("%f\n", &transportation);
+    // Calculate savings as 10% of income (variable)
+    float savings = income* 0.1;
+    // Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
+    float spending = income -(rent+ utilities+ groceries+ transportation+ savings);
+    // Calculate percent of rent (rent/ income) (variable)
+    float percent_rent = (rent/ income) *100;
+    // Calculate percent of utilities (utilities/ income) (variable)
+    float percent_utilities = (utilities/ income) *100;
+    // Calculate percent of groceries (groceries/ income) (variable)
+    float percent_groceries = (groceries/ income) *100;
+    // Calculate percent of transportation (transportation/ income) (variable)
+    float percent_transportation = (transportation/ income) *100;
+    // Calculate percent of spending (spending/income) (variable)
+    float percent_spending = (spending/income) *100;
     // tell user category spending amount AND percent for rent("You spend $XX.XX on rent and that is XX% of your income.") (print)
     printf("Each month you spend $%.2f on rent, which is %.2f% of your monthly income.\n", rent, percent_rent);
     // tell user category spending amount AND percent for utilities ("You spend $XX.XX on utilities and that is XX% of your income.") (print)
