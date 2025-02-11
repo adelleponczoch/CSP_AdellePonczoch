@@ -2,7 +2,7 @@
 
 name = input ("What is your name?\n").strip().lower()
 
-one = <<<
-two = >>>
+one = "<<<"
+two = ">>>"
 
 print(one+name+two)
