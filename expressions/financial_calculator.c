@@ -3,15 +3,16 @@
 #include <math.h>
 
 // Ask for monthly income (user input)
-float income[10];
+float income;
 // Ask for rent amount (user input)
-float rent[10];
+float rent;
 // Ask for utilities expenses (user input)
-float utilities[10];
+float utilities;
 // Ask for groceries expenses (user input)
-float groceries[10];
+float groceries;
 // Ask for transportation expenses (user input)
-float transportation[10];
+float transportation;
+
 
 int main(void){
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
@@ -25,6 +26,7 @@ int main(void){
     scanf("%f\n", &groceries);
     printf("%f\n", "What is your monthly transportation cost: \n");
     scanf("%f\n", &transportation);
+
     // Calculate savings as 10% of income (variable)
     float savings = income* 0.1;
     // Calculate spending money income - ( rent+ utilities+ groceries+ transportation+ savings) (variable)
@@ -39,6 +41,7 @@ int main(void){
     float percent_transportation = (transportation/ income) *100;
     // Calculate percent of spending (spending/income) (variable)
     float percent_spending = (spending/income) *100;
+    
     // tell user category spending amount AND percent for rent("You spend $XX.XX on rent and that is XX% of your income.") (print)
     printf("Each month you spend $%.2f on rent, which is %.2f% of your monthly income.\n", rent, percent_rent);
     // tell user category spending amount AND percent for utilities ("You spend $XX.XX on utilities and that is XX% of your income.") (print)
