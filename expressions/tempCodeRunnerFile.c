@@ -1,0 +1,1 @@
+printf("Each month you spend $%.2f%% on utilities, which is %.2f% of your monthly income.\n", utilities, percent_utilities);
