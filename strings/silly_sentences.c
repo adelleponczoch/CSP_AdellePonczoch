@@ -13,6 +13,7 @@ char dessert[15];
 char time[10];
 
 int main(void){
+    printf("Welcome to my program! This will let you make a silly sentence by filling in the following blanks: \n");
     printf("Give me a name: ");
     scanf("%s", name);
     printf("Give me an animal: ");
