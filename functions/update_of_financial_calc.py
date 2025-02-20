@@ -4,8 +4,14 @@ def info(income, amount, type):
     percent_type = (amount/ income) *100
     print(f"Each month you spend ${amount:.2f} on {type}, which is {percent_type:.2f}% of your monthly income.")
 
-def user(income, amount, type):
-    income = float (input ("What is your monthly {amount}?\n"))
+def user(amount, type):
+    type = float (input ("What is your monthly amount?\n"))
+
+user(income, rent, "rent")
+user(income, utilities, "utilities")
+user(income, groceries, "groceries")
+user(income, transportation, "transportation")
+
 
 # Write a print statement telling the user what the program is (budget calculator)
 print("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n")
