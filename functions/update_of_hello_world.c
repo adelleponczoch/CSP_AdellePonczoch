@@ -7,12 +7,7 @@ int main(void){
     printf("Please tell me your name: ");
     fgets(name, sizeof(name), stdin);
 
-    printf("Hello %s!", name);
-
-name();
-name();
-name();
-name();
+    printf("Hello %s", name);
 
     return 0;
 }
