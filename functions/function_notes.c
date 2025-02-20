@@ -1,6 +1,8 @@
 //Adelle Ponczoch, Function Notes in C
 #include <stdio.h>
 
+char name;
+
 int add(void){
     return 6+8;
 }

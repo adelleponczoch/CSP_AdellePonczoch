@@ -1,13 +1,15 @@
 //Adelle Ponczoch, Update of Hello World in C
 #include <stdio.h>
 
-char name[20];
+void welcome(char name[]){
+    printf("Hello %s", name);
+}
 
 int main(void){
-    printf("Please tell me your name: ");
-    fgets(name, sizeof(name), stdin);
-
-    printf("Hello %s", name);
-
+    welcome("Sasha!\n");
+    welcome("Paige!\n");
+    welcome("Eve!\n");
+    welcome("Ali!\n");
+    welcome("Julia!\n");
     return 0;
 }
