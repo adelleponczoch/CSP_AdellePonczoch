@@ -10,12 +10,12 @@ int add(void){
 void add(int numOne,int numTwo){
     printf("%d\n", numOne+numTwo);
 }
-const char* input(char type[50], int length){
-    char answer[50];
-    printf("Please give me a %s:\n", type);
+//const char* input(char type[50], int length){
+    //char answer[50];
+    //printf("Please give me a %s:\n", type);
     //getStr(answer, sizeof(answer)-1);
-    return answer;
-}
+    //return answer;
+//}
 int main(void){
     //printf("Hello World\n");
     //add(4,9);
