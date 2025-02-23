@@ -34,6 +34,6 @@ int main(void){
     transportation = user("transportation");
     savings = income* 0.1;
     
-    // Calculate savings as 10% of income (variable)
+    // Calculate savings as 10% of income
     float savings = income* 0.1;
 }
