@@ -27,12 +27,12 @@ int main(void){
     info(income, groceries, "groceries");
     info(income, transportation, "transportation");
 
-    income = user("income");
-    rent = user("rent");
-    utilities = user("utilities");
-    groceries = user("groceries");
-    transportation = user("transportation");
-    savings = income* 0.1;
+    char income = user("income");
+    char rent = user("rent");
+    char utilities = user("utilities");
+    char groceries = user("groceries");
+    char transportation = user("transportation");
+    char savings = income* 0.1;
     
     // Calculate savings as 10% of income
     float savings = income* 0.1;
