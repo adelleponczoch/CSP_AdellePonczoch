@@ -22,10 +22,10 @@ float user(type){
 int main(void){
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
     
-    info(income, rent, "rent");
-    info(income, utilities, "utilities");
-    info(income, groceries, "groceries");
-    info(income, transportation, "transportation");
+    char info(income, rent, "rent");
+    char info(income, utilities, "utilities");
+    char info(income, groceries, "groceries");
+    char info(income, transportation, "transportation");
 
     char income = user("income");
     char rent = user("rent");
