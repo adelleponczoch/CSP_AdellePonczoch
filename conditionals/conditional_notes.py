@@ -56,3 +56,19 @@
 #else:
     #print("Your name has the letter A!")
 
+num = 3
+
+if num > 5 and num < 10:
+    if num == 7:
+        print(f"{num} is an unlucky number!")
+    else:
+        print(f"{num} is a large single digit number.")
+else:
+    if num == 4:
+        print(f"{num} is the best number!")
+    else:
+        if num >= 10:
+            print(f"{num} is not a single digit number.")
+        else:
+            print(f"{num} is a small number.")
+
