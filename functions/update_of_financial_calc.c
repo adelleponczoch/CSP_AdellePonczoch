@@ -8,36 +8,31 @@ float groceries;
 float transportation;
 float savings;
 
-void percent(float amount, float income, const char* type){
-    float percent_type = (amount/ income) *100;
-    printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, type, percent_type);
-    return 0;
+void percent(float amount, float income, const char* category){
+    float percent_category = (amount/ income) *100;
+    printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, category, percent_category);
+    return;
 }
 
-float info(float income, float type, float amount){
-    float percent_type = (amount/ income) *100;
-    printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, type, percent_type);
-    return 0;
-}
-
-float user(type){
+char user(category){
     printf("What is your monthly cost of %s: \n");
-    return scanf("%s", &type);
+    return scanf("%s", &category);
 }
 
 int main(void){
+    
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
 
-    float income = user("income", &income);
+    float income = user("income");
     float rent = user("rent");
     float utilities = user("utilities");
     float groceries = user("groceries");
     float transportation = user("transportation");
     float savings = income* 0.1;
 
-    info("rent", rent, income);
-    info(income, utilities, "utilities", &utilities);
-    info(income, groceries, "groceries", &groceries);
-    info(income, transportation, "transportation", &transportation);
+    percent(rent, income, "rent");
+    percent(income, utilities, "utilities");
+    percent(income, groceries, "groceries");
+    percent(income, transportation, "transportation");
     return 0;
 }
