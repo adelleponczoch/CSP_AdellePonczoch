@@ -8,14 +8,14 @@ float groceries;
 float transportation;
 float savings;
 
-void percent(float amount, float income, const char* category){
+void percent(float amount, float income, char category[]){
     float percent_category = (amount/ income) *100;
     printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, category, percent_category);
     return;
 }
 
-char user(category){
-    printf("What is your monthly cost of %s: \n");
+char user(char category[]){
+    printf("What is your monthly cost of %s: \n", category);
     return scanf("%s", &category);
 }
 
