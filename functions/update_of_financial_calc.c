@@ -15,22 +15,27 @@ void percent(float amount, float income, char category[]){
 }
 
 char user(char category[]){
+    float cost;
     printf("What is your monthly cost of %s: \n", category);
-    return scanf("%s", &category);
+    scanf("%f", &cost);
+    printf("%f\n", cost);
+    return cost;
 }
 
 int main(void){
     
     printf("Welcome to my program! This will be able to tell you your monthly spending amount on different expenses as well as their total percentage cost of your monthly income.\n");
 
-    float income = user("income");
-    float rent = user("rent");
-    float utilities = user("utilities");
-    float groceries = user("groceries");
-    float transportation = user("transportation");
-    float savings = income* 0.1;
+    income = user("income");
+    rent = user("rent");
+    utilities = user("utilities");
+    groceries = user("groceries");
+    transportation = user("transportation");
 
-    percent(rent, income, "rent");
+    printf("%f\n", income);
+    savings = income* 0.1;
+
+    percent(income, rent, "rent");
     percent(income, utilities, "utilities");
     percent(income, groceries, "groceries");
     percent(income, transportation, "transportation");
