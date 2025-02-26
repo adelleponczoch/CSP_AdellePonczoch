@@ -11,6 +11,8 @@ float savings;
 void percent(float amount, float income, char category[]){
     float percent_category = (amount/ income) *100;
     printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, category, percent_category);
+    printf("Each month you spend $%.2f on savings, which is 10%% of your monthly income.\n", savings);
+    printf("Each month you have $%.2f extra for spending, which is %.2f%% of your monthly income.\n", spending, percent_spending);
     return;
 }
 
@@ -37,5 +39,6 @@ int main(void){
     percent(utilities, income, "utilities");
     percent(groceries, income, "groceries");
     percent(transportation, income, "transportation");
+
     return 0;
 }
