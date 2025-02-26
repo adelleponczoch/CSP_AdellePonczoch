@@ -1,4 +1,4 @@
-// Adelle Ponczoch, Update of Financial Calculator C
+// Adelle Ponczoch, Update of Financial Calculator in C
 #include <stdio.h>
 
 float income;
