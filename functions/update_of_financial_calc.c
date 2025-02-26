@@ -7,12 +7,11 @@ float utilities;
 float groceries;
 float transportation;
 float savings;
+float spending;
 
 void percent(float amount, float income, char category[]){
     float percent_category = (amount/ income) *100;
     printf("Each month you spend $%.2f on %s, which is %.2f%% of your monthly income.\n", amount, category, percent_category);
-    printf("Each month you spend $%.2f on savings, which is 10%% of your monthly income.\n", savings);
-    printf("Each month you have $%.2f extra for spending, which is %.2f%% of your monthly income.\n", spending, percent_spending);
     return;
 }
 
@@ -34,11 +33,15 @@ int main(void){
     transportation = user("transportation");
 
     savings = income* 0.1;
+    spending = income - (rent+utilities+groceries+transportation+savings);
+    float spend_percent = spending/income *100;
 
     percent(rent, income, "rent");
     percent(utilities, income, "utilities");
     percent(groceries, income, "groceries");
     percent(transportation, income, "transportation");
 
+    printf("You have $%.2f for savings which is 10%% of your total income.\n", savings);
+    printf("You have $%.2f left for spending which is %.2f%% of your total income\n", spending, spend_percent);
     return 0;
 }
