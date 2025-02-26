@@ -14,11 +14,10 @@ void percent(float amount, float income, char category[]){
     return;
 }
 
-char user(char category[]){
+float user(char category[]){
     float cost;
-    printf("What is your monthly cost of %s: \n", category);
+    printf("What is your monthly %s: \n", category);
     scanf("%f", &cost);
-    printf("%f\n", cost);
     return cost;
 }
 
@@ -32,12 +31,11 @@ int main(void){
     groceries = user("groceries");
     transportation = user("transportation");
 
-    printf("%f\n", income);
     savings = income* 0.1;
 
-    percent(income, rent, "rent");
-    percent(income, utilities, "utilities");
-    percent(income, groceries, "groceries");
-    percent(income, transportation, "transportation");
+    percent(rent, income, "rent");
+    percent(utilities, income, "utilities");
+    percent(groceries, income, "groceries");
+    percent(transportation, income, "transportation");
     return 0;
 }
