@@ -1,7 +1,7 @@
 //Adelle Ponczoch, Old Enough C
 #include <stdio.h>
 
-int age[] = 15
+int age = 15;
 
 int main(void){
     printf("Welcome to my program. This will tell you if you are old enough to vote, drive, get a learner's permit and go to school.");
