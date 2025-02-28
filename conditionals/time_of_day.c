@@ -1,4 +1,4 @@
-//Adelle Ponczoch, Template
+//Adelle Ponczoch, Time of Day in C
 #include <stdio.h>
 #include <time.h>
 
