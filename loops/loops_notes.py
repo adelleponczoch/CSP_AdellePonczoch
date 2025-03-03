@@ -47,3 +47,17 @@ num = 1
 while num <21:
     print(num)
     num += 1
+
+import random
+
+num = 1
+rand = random.randint(1,20)
+while num < 21:
+    if num == rand:
+        print(f"Goose!")
+        break # Tells the loop to end once the conditon is met
+    else:
+        print("Duck")
+    num += 1
+
+# Continue tells the loop to stop that particular round of the loop
