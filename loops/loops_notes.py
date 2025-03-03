@@ -30,11 +30,20 @@ siblings[7] = "Jake"
 siblings.pop(5)
 print(siblings)
 #proper list printing with a for loop
+num = 1
 for sibling in siblings:
-    print(sibling)
+    print(f"{num}. {sibling} LaRose")
+    num +=1
+
 # How do you make lists in python? 
     #you make a variable, do brackets and put commas in between list items
 
 # How do you make for loops in python? 
-
+for num in range(1,11, 2):
+    print(num)
 # How do you make while loops in python?
+num = 1
+
+while num <21:
+    print(num)
+    num += 1
