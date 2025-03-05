@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 int main(void){
-    char siblings[][20] = {"Vienna", "Grace", "Jacob", "Seth", "Adelle", "Miriam"};
-        int mlength = sizeof(movies)/sizeof(movies[0]);
-        int m = 0;
-        while(m<mlength){
-            printf("%s\n", movies[m]);
-            m++;
+    char siblings[][20] = {"Vienna", "Grace", "Jacob", "Seth", "Adelle", "Miriam", "Isaac", "Cyrus"};
+        int length = sizeof(siblings)/sizeof(siblings[0]);
+        int s = 0;
+        while(s<length){
+            printf("Hello %s\n", siblings[s]);
+            s++;
         }
     return 0;
 }
