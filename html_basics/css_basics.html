@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>html advanced notes</title>
+        <!--embedded style sheet-->
+        <!--Only use each selector one time also, the one used last will be the one that happens-->
+        <style>
+            *{
+                background-color: rgb(255, 201, 250);
+            }
+            li{
+                color:rgb(218, 156, 115);
+            }
+            #even{
+                color:#C2AFC8;
+                font-size: 20px;
+            }
+            .intro{
+                color:red;
+                text-align: center;
+            }
+            #img-src{
+                font-size: 5px;
+                color:gray;
+            }
+            img{
+            width: 50%;
+            }
+            h1{
+                font-size: 2em;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Advanced Notes</h1>
+        <p class="intro">Nesting an html tag is putting it inside of another one.</p>
+        <ol>
+            <li>li tags must be nested</li>
+            <li id="even">What appears on the webpage is nested in the body tag</li>
+        </ol>
+        <div>
+            <h2>Candy</h2>
+        <ul>
+            <li>Butterfinger</li>
+            <li
+            id="even">Crunch</li>
+            <li>100 Grand</li>
+        </ul>
+        </div>
+        <dl>
+            <dt>Aang</dt>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*3xTjr7rYOjGYjKqi.jpg"
+            alt="Aang trying to barter"
+            
+            <small><small><small><dd>Image from: https://bjornjohann.medium.com/the-wondrous-pacifism-of-avatar-aang-362ef3d048c4</dd></small></small></small>
+            <dd>The last airbender. The avatar... kinda a dork.</dd>
+            <dt>Katara</dt>
+            <dd>Water bender. From the South pole. Gives speaches about hope all the time...</dd>
+        </dl>
+        
+        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*3xTjr7rYOjGYjKqi.jpg"
+        alt="Aang trying to barter">
+
+        <p class="img-src">Image from: medium</p>
+        <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank"> attributes</a>
+        <br>
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"> links</a>
+    </body>
+</html>
