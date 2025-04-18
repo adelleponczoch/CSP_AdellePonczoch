@@ -1,0 +1,34 @@
+*{
+    background-color: blanchedalmond;
+    font-family: "Meow Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding: 10px;
+    margin: 10px;
+}
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#one{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 150px;
+}
+#img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Generic Font Families
+1. Serif
+2. Sans-serif
+3. Monspace
+4. Cursive
+5. Fantasy */
