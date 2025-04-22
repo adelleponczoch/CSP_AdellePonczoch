@@ -5,8 +5,9 @@
         <title>HTML First Website: All about Shakespeare</title>
         <style>
             *{
-                background-color: rgb(216, 207, 199);
+                background-color: blanchedalmond;
                 color: rgb(53, 52, 52);
+                font-family: 'Courier New', Courier, monospace;
             }
             h1{
                 text-align:center;
@@ -18,12 +19,35 @@
             img{
                 width: 30%;
             }
+            #content{
+                border-radius: 5px;
+                display: grid;
+                background-color: rgba(255, 255, 255, 0.801);
+                padding: 10px;
+                margin: 10px;
+            }
+            #title{
+                border-radius: 5px;
+                display: grid;
+                background-color: rgba(255, 255, 255, 0.801);
+                padding: 10px;
+                margin: 10px;
+            }
+            #img{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
 
         </style>
     </head>
     <body>
+        <div id = "title">
         <h1>All about Shakespeare</h1>
         <p>William Shakespeare was an important figure due to his impact on the English language. Let's dive in!</p>
+        </div>
+        <br>
+        <div id="content">
         <dl>
         <dt>Shakespeare's Portrait</dt>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZdTVOKsladTdQj3Oej2TWvsk5nfnky6ECQ&s">
@@ -45,6 +69,7 @@
         <dt>Shakespeare's Impact</dt>
         <dd>William Shakespeare was one of the greatest writers of all time, and will forever be remembered for his impact on the English Language. He invented many words still used today, such as eyeball, green-eyed monster, puppy dog, alligator, dauntless, and much more. His work left a resounding affect on the English language and demonstrated beatifully the expressiveness of it. </dd>
         </dl>
+        </div>
         <p>After reading all that, you must admit that Shakespeare was an icon of his time, and was a fascinating poet, playwright, and actor. If you're still curious about him however, you should look at some of these websites:</p>
         <a href="https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/william-shakespeare/william-shakespeare-biography/" target="_blank"> Shakespeare's Biography</a>
         <br>
