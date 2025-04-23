@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>HTML First Website: All about Shakespeare</title>
+        <script src="firstwebsite.js"></script>
         <style>
             body{
                 background-color: blanchedalmond;
@@ -35,9 +36,21 @@
                 margin: 10px;
             }
             #img{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            image{
+                height: 100px;
+                width: auto;
+            }
+            #hidden{
+                border-radius: 5px;
+                display: grid;
+                background-color: rgba(255, 255, 255, 0.801);
+                padding: 10px;
+                margin: 10px;
+                display:none;
             }
 
         </style>
@@ -51,7 +64,7 @@
         <div id="content">
         <dl>
         <dt>Shakespeare's Portrait</dt>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZdTVOKsladTdQj3Oej2TWvsk5nfnky6ECQ&s">
+            <img id = "img" onmouseover="change()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZdTVOKsladTdQj3Oej2TWvsk5nfnky6ECQ&s">
             <dd class="img-src">Image from:https://americanplayers.org/about/people/william-shakespeare</dd>
         <br>
         <dt>Shakespeare is Born </dt>
@@ -71,11 +84,17 @@
         <dd>William Shakespeare was one of the greatest writers of all time, and will forever be remembered for his impact on the English Language. He invented many words still used today, such as eyeball, green-eyed monster, puppy dog, alligator, dauntless, and much more. His work left a resounding affect on the English language and demonstrated beatifully the expressiveness of it. </dd>
         </dl>
         </div>
+        <button id="btn" onclick="show()">Click Me!</button>
+        <div id="hidden">
         <p>After reading all that, you must admit that Shakespeare was an icon of his time, and was a fascinating poet, playwright, and actor. If you're still curious about him however, you should look at some of these websites:</p>
         <a href="https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/william-shakespeare/william-shakespeare-biography/" target="_blank"> Shakespeare's Biography</a>
         <br>
         <a href="https://www.britannica.com/biography/William-Shakespeare" target="_blank"> Shakespeare's Life and Impact</a>
         <br>
         <a href="https://www.poetryfoundation.org/poets/william-shakespeare" target="_blank"> Shakespeare's Poetry Foundation</a>
+        <br>
+        <img src="https://static.independent.co.uk/2022/09/13/17/e934d0779a2c7026669a8e662b4e7c15Y29udGVudHNlYXJjaGFwaSwxNjYzMTcxNTE2-2.25958715.jpg">
+            <p class="img-src">Image from: https://www.the-independent.com/arts-entertainment/books/features/william-shakespeare-first-folio-anniversary-b2446482.html</p>
+        </div>
     </body>
 </html>

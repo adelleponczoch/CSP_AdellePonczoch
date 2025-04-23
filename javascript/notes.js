@@ -1,6 +1,7 @@
-let images = ["https://www.mountain-forecast.com/system/images/24500/large/Mount-Timpanogos.jpg?1532401039", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzWB_2RLSqlVCMHgckp6RY_H_xD5w2TsRr7rmMmbq2_T-ap1HMwLwXpgIxaW-qEiWrQs&usqp=CAU", "https://www.fs.usda.gov/wildflowers/regions/intermountain/MtTimpanogos/images/MtTimpanogosinSpring_FrankJensen_lg.jpg"]
+let images = ["https://www.mountain-forecast.com/system/images/24500/large/Mount-Timpanogos.jpg?1532401039", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzWB_2RLSqlVCMHgckp6RY_H_xD5w2TsRr7rmMmbq2_T-ap1HMwLwXpgIxaW-qEiWrQs&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZdTVOKsladTdQj3Oej2TWvsk5nfnky6ECQ&s"]
 function hello(){
-    document.getElementById("title").innerHTML = "Hello World!"
+    let name = window.prompt("What is your name?")
+    document.getElementById("title").innerHTML = "Hello " + name + "!"
 }
 count = 0
 function change(){
@@ -21,9 +22,12 @@ function normal(){
     document.getElementById("btn").style.backgroundColor = "gray"
     document.getElementById("btn").style.color="black"
 }
+function push(){
+    document.getElementById("btn").style.backgroundColor = "red"
+}
 function show(){
     document.getElementById("hidden").style.display = "block"
 }
 function pop(){
-    document.get
+    window.alert("For real. Don't click this!")
 }
