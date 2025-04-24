@@ -9,19 +9,27 @@
                 background-color: blanchedalmond;
                 color: rgb(53, 52, 52);
                 font-family: 'Courier New', Courier, monospace;
+                grid-template-columns: auto auto;
             }
             h1{
                 text-align:center;
             }
             .img-src{
+                text-wrap: auto;
                 font-size: 10px;
                 color:gray;
             }
             img{
-                width: 30%;
+                width: 50%;
                 margin: 10px;
             }
             #content{
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.801);
+                padding: 10px;
+                margin: 10px;
+            }
+            #content_two{
                 border-radius: 5px;
                 display: grid;
                 background-color: rgba(255, 255, 255, 0.801);
@@ -52,6 +60,9 @@
                 margin: 10px;
                 display:none;
             }
+            #all{
+                column-count: 2;
+            }
 
         </style>
     </head>
@@ -61,16 +72,24 @@
         <p>William Shakespeare was an important figure due to his impact on the English language. Let's dive in!</p>
         </div>
         <br>
+        <div id="all">
         <div id="content">
+            <br>
         <dl>
         <dt>Shakespeare's Portrait</dt>
             <img id = "img" onmouseover="change()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZdTVOKsladTdQj3Oej2TWvsk5nfnky6ECQ&s">
-            <dd class="img-src">Image from:https://americanplayers.org/about/people/william-shakespeare</dd>
+            <dd class="img-src">Image from:https://americanplayers.org/about/
+                people/william-shakespeare</dd>
         <br>
         <dt>Shakespeare is Born </dt>
         <dd>Shakespeare was born during the renaissance times in the Middle Ages. Although his exact birthday is unknown, it is estimated to be April 23, 1564. He was born in his family's house in Stratford-upon-Avon, England. The house doubled as his father's workplace as a glover's shop. His father, John Shakespeare, lived at the house for 50 years before meeting Shakespeare's mother, Mary Arden, and having eight children. </dd>
         <dt>Shakespeare's Education</dt>
         <dd>Growing up, Shakespeare attended Grammar School. This was a mark of how important his father was, as not many people were able to attend. Here, they were very strict and it wasn't uncommon for punishments to result in caning. While at Grammar School, Shakespeare learned a lot about literature and the English language, something neithere his parents nor children would ever learn to read. </dd>
+        </dl>
+        </div>
+        <br>
+        <div id = "content_two"
+        <dl>
         <dt>Shakespeare's Grammar School</dt>
             <img src="https://media.shakespeare.org.uk/images/Grammar_School.original.jpg"
             >
@@ -95,6 +114,8 @@
         <br>
         <img src="https://static.independent.co.uk/2022/09/13/17/e934d0779a2c7026669a8e662b4e7c15Y29udGVudHNlYXJjaGFwaSwxNjYzMTcxNTE2-2.25958715.jpg">
             <p class="img-src">Image from: https://www.the-independent.com/arts-entertainment/books/features/william-shakespeare-first-folio-anniversary-b2446482.html</p>
+        </dl>
+        </div>
         </div>
     </body>
 </html>
