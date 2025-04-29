@@ -19,7 +19,7 @@
                 border-radius: 10px;
                 display: grid;
                 background-color: rgba(255, 245, 227, 0.747);
-                padding: 10px;
+                padding: 15px;
                 margin: 10px;
             }
             #title{
@@ -31,28 +31,37 @@
                 color:rgb(80, 68, 62);
             }
             img{
-                width: 600px;
+                height: 200px;
                 border-color: rgba(255, 245, 227, 0.747);
                 border: 5px solid rgba(255, 245, 227, 0.747);
                 border-radius: 10px;
-                margin: 10px;
+                margin: 20px;
+            }
+            #himg{
+                height: 200px;
+                border-color: rgb(53, 32, 6);
+                border: 5px solid rgb(53, 32, 6);
+                border-radius: 10px;
+                margin: 20px;
             }
             #content{
                 display: grid;
-                grid-template-columns: 1fr 3fr;
+                grid-template-columns: 1fr 3fr 2fr;
             }
-            #text{
+            #hidden{
                 border-radius: 10px;
                 background-color: rgba(255, 245, 227, 0.747);
-                padding: 10px;
+                padding: 15px;
                 margin: 10px;
-                display: none;
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+                
             }
             #list{
                 border-radius: 10px;
                 display: grid;
                 background-color: rgba(255, 245, 227, 0.747);
-                padding: 10px;
+                padding: 15px;
                 margin: 10px;
             }
         </style>
@@ -64,12 +73,12 @@
         </div>
         <div id="content">
         <div id="images">
-        <img id = "sign" onmouseover="change()" src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
-        <p class="img-src">Image from:https://www.offthebeatenpath.com/zion-national-park-stay-off-beaten-path/</p>
-        <img id = "river" src="https://zionnationalpark.com/wp-content/uploads/2024/02/AdobeStock_299606490-2048x1378.jpeg">
-        <p class="img-src">Image from:https://zionnationalpark.com/</p>
-        <img id = "view" src="https://www.undercanvas.com/wp-content/uploads/2023/10/Zion-scaled-1.webp">
-        <p class="img-src">Image from:https://www.undercanvas.com/camps/zion/</p>
+            <img id ="sign" onmouseover="swap()" src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
+            <p class="img-src">Image from:https://www.offthebeatenpath.com/zion-national-park-stay-off-beaten-path/</p>
+            <img id = "river" src="https://zionnationalpark.com/wp-content/uploads/2024/02/AdobeStock_299606490-2048x1378.jpeg">
+            <p class="img-src">Image from:https://zionnationalpark.com/</p>
+            <img id = "view" src="https://www.undercanvas.com/wp-content/uploads/2023/10/Zion-scaled-1.webp">
+            <p class="img-src">Image from:https://www.undercanvas.com/camps/zion/</p>
         </div>
         <div id="list">
             <ul>
@@ -111,9 +120,17 @@
                 </li>
             </ul>
         </div>
-        <button id="btn" onclick="show()">Show more!</button>
-        <div id="text">
+        
+        <div id="hidden">
+            <div id="hidden_image">
+            <img id = "himg" src="https://www.nps.gov/zion/planyourvisit/images/Subway.jpeg?maxwidth=1300&maxheight=1300&autorotate=false">
+            <p class="img-src">Image from:https://www.nps.gov/zion/planyourvisit/thesubway.htm</p>
+            </div>
+            <div id="hidden_paragraph">
+            <h3>Planning your Stay:</h3>
             <p>Rangers at the visitor centers in Zion Canyon and Kolob Canyons can help visitors plan their stay. Guided horseback riding trips, nature walks, and evening programs are available from late March to early November. The Junior Ranger Program for children ages 4 and up is active year-round at the Nature Center, Human History Museum, and the visitor centers. A bookstore attached to the Zion Canyon visitor center offers books, maps, and souvenirs. The Grotto in Zion Canyon, the visitor center, and the viewpoint at the end of Kolob Canyons Road have the only designated picnic sites. The visitor center also utilizes multiple types of environmental technology, including windcatchers for passive cooling and cross ventilation, which bring the center's temperature down during hot summer weather, a trombe wall to keep heat in during the winter, and solar panels for an electrical source (excess energy goes to the power grid).</p>
+        </div>
+        </div>
         </div>
         </div>
     </body>
