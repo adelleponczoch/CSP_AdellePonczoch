@@ -37,6 +37,14 @@
                 border-radius: 10px;
                 margin: 20px;
             }
+            #none{
+                border-radius: 10px;
+                background-color: rgba(255, 245, 227, 0.747);
+                padding: 15px;
+                margin: 10px;
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+            }
             #himg{
                 height: 200px;
                 border-color: rgb(53, 32, 6);
@@ -44,18 +52,12 @@
                 border-radius: 10px;
                 margin: 20px;
             }
+            #hidden{
+                display: none;
+            }
             #content{
                 display: grid;
                 grid-template-columns: 1fr 3fr 2fr;
-            }
-            #hidden{
-                border-radius: 10px;
-                background-color: rgba(255, 245, 227, 0.747);
-                padding: 15px;
-                margin: 10px;
-                display: grid;
-                grid-template-rows: 1fr 2fr;
-                
             }
             #list{
                 border-radius: 10px;
@@ -68,16 +70,17 @@
     </head>
     <body>
         <div id="intro">
-        <h1 id="title">Zion National Park</h1>
+        <h1 id="title">Zion National Park</h1> 
         <p>If you're looking for a great vacation spot, look no further! In our very own Utah lies one of the best National Parks in the country. Zion National Park offers a unique and unforgettable experience for visitors due to its stunning natural beauty, diverse hiking and climbing opportunities, and unique geological features. It's a place where visitors can connect with nature, witness awe-inspiring landscapes, and enjoy a variety of outdoor adventures. </p>
+        <button id="btn" onclick="show()">More Info</button>
         </div>
         <div id="content">
         <div id="images">
-            <img id ="sign" onmouseover="swap()" src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
+            <img id ="img" onmouseover = "change()" src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
             <p class="img-src">Image from:https://www.offthebeatenpath.com/zion-national-park-stay-off-beaten-path/</p>
-            <img id = "river" src="https://zionnationalpark.com/wp-content/uploads/2024/02/AdobeStock_299606490-2048x1378.jpeg">
+            <img  src="https://zionnationalpark.com/wp-content/uploads/2024/02/AdobeStock_299606490-2048x1378.jpeg">
             <p class="img-src">Image from:https://zionnationalpark.com/</p>
-            <img id = "view" src="https://www.undercanvas.com/wp-content/uploads/2023/10/Zion-scaled-1.webp">
+            <img src="https://www.undercanvas.com/wp-content/uploads/2023/10/Zion-scaled-1.webp">
             <p class="img-src">Image from:https://www.undercanvas.com/camps/zion/</p>
         </div>
         <div id="list">
@@ -120,8 +123,8 @@
                 </li>
             </ul>
         </div>
-        
         <div id="hidden">
+        <div id="none">
             <div id="hidden_image">
             <img id = "himg" src="https://www.nps.gov/zion/planyourvisit/images/Subway.jpeg?maxwidth=1300&maxheight=1300&autorotate=false">
             <p class="img-src">Image from:https://www.nps.gov/zion/planyourvisit/thesubway.htm</p>
@@ -129,6 +132,7 @@
             <div id="hidden_paragraph">
             <h3>Planning your Stay:</h3>
             <p>Rangers at the visitor centers in Zion Canyon and Kolob Canyons can help visitors plan their stay. Guided horseback riding trips, nature walks, and evening programs are available from late March to early November. The Junior Ranger Program for children ages 4 and up is active year-round at the Nature Center, Human History Museum, and the visitor centers. A bookstore attached to the Zion Canyon visitor center offers books, maps, and souvenirs. The Grotto in Zion Canyon, the visitor center, and the viewpoint at the end of Kolob Canyons Road have the only designated picnic sites. The visitor center also utilizes multiple types of environmental technology, including windcatchers for passive cooling and cross ventilation, which bring the center's temperature down during hot summer weather, a trombe wall to keep heat in during the winter, and solar panels for an electrical source (excess energy goes to the power grid).</p>
+        </div>
         </div>
         </div>
         </div>

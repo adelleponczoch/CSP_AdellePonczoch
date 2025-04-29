@@ -13,9 +13,9 @@ function show(){
 }
 
 count = 0
-function swap(){
-    document.getElementById("sign").src = images[count]
-    document.getElementById("title").style.color = "blue"
+function change(){
+    
+    document.getElementById("img").src = images[count]
     if(count === 2){
         count = 0
     }else{
