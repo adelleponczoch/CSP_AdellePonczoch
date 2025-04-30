@@ -1,6 +1,5 @@
-let images = ["https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg", "https://media.timeout.com/images/106151559/750/562/image.jpg", "https://thegoldenhouradventurer.com/wp-content/uploads/2020/09/ObservationPointZionNP01-scaled.jpg"]
+let images = ["https://media.timeout.com/images/106151559/750/562/image.jpg", "https://thegoldenhouradventurer.com/wp-content/uploads/2020/09/ObservationPointZionNP01-scaled.jpg", "https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg"]
 
-let webpage = document.getElementById("hidden").style.display 
 
 function show(){
     if (document.getElementById("hidden").style.display != "flex"){
@@ -12,7 +11,7 @@ function show(){
 }
 }
 
-count = 0
+let count = 0
 function change(){
     document.getElementById("img").src = images[count]
     if(count === 2){
