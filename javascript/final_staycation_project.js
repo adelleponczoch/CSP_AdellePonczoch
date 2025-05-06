@@ -1,4 +1,4 @@
-let images = ["https://media.timeout.com/images/106151559/750/562/image.jpg", "https://thegoldenhouradventurer.com/wp-content/uploads/2020/09/ObservationPointZionNP01-scaled.jpg", "https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg"]
+let images = ["https://media.timeout.com/images/106151559/750/562/image.jpg", "https://visitfourcorners.com/wp-content/uploads/2024/01/Arches-National-Park-A-1024x572.webp", "https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg"]
 
 
 function show(){
